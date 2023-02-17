@@ -27,7 +27,7 @@ export const Input = styled.input`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 45%;
+  height: 10%;
   width: 50%;
   background: #f7fff7;
   padding: 0px 20px;
