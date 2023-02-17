@@ -1,4 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from "react";
+import { Button, Input } from "./components/styled/form.styled";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "./app/store";
 import { addTodos } from "./features/todosSlice";
@@ -15,15 +16,22 @@ export const AddForm: React.FC = () => {
 		event.preventDefault();
 
 		dispatcher(addTodos(addNewTodo));
+
+		// addTodos(addNewTodo);
+
+		// dispatcher(addTodos(addNewTodo));
+
 		setAddNewTodo("");
 	};
 
 	return (
 		<form>
-			<input type="text" value={addNewTodo} onChange={handleChange} />
-			<button type="submit" onClick={handleSubmit}>
-				Add{" "}
-			</button>
+			<form>
+				<Input type="text" value={addNewTodo} onChange={handleChange} />
+				<Button type="submit" onClick={handleSubmit}>
+					Add{" "}
+				</Button>
+			</form>
 		</form>
 	);
 };
