@@ -1,12 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   body {
  
-      /* background-image: url('/milky.jpg');
-  background-size: cover;
-  background-repeat: no-repeat; */
-    background-color: #1a535c;
     color: #f7fff7;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
@@ -16,11 +12,9 @@ const GlobalStyle = createGlobalStyle`
 
     animation: color-change 10s infinite;
 }
-
-
 h1 {
     font-family: 'Nunito Sans', sans-serif;
-    	font-weight: 900;
+   font-weight: 900;
 	text-transform: uppercase;
     color: #f7fff7;
   }
@@ -34,6 +28,6 @@ h1 {
       color: #4ecdc4;
     }
   }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle
